@@ -1,20 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.promo{
-    background: linear-gradient(to right, #D83200, #FF9900);
-    color:  #FFFFFF;
-    text-align: center;
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 8px;
-    display: flex;
-    
-  
-}
-.cupom{
-    border-radius: 5px;
-    padding: 4px;
-    background-color:  #a832008f;
-}
-.header{
-    
-}
+ 
+ .promo {
+     background: linear-gradient(to right, #D83200, #FF9900);
+     color: #FFFFFF;
+     text-align: center;
+     padding: 10px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     border-radius: 8px;
+     
+ }
+
+ .cupom {
+     border-radius: 5px;
+     padding: 4px;
+     background-color: #a832008f;
+ }
+
+ .nav-bar {
+     background-color: black;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+
+ }
+
+ .logo {
+     font-size: 50px;
+     text-decoration: none;
+     margin-right: 10px;
+
+ }
+
+ .title {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 35px;
+     color: #FFFFFF;
+     margin-left: 80px;
+     margin-bottom: 0;
+     margin: 0;
+ }
+
+ .subtitle {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+     color: #F77F00;
+     margin-left: 80px;
+     font-weight: 700;
+     margin-top: 0;
+     margin: 0;
+
+ }
+/*centralizar itens da nav bar no centro*/
+ nav {
+     display: flex;
+     align-items: center;
+     gap: 25px;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+
+ }
+/*chamar todos os itens da navbar de uma vez*/
+ nav a {
+     color: rgb(159, 156, 156);
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: bold;
+
+ }
+
+ /*deixar itens do menu laranja ao pousar o mouse*/
+ nav a:hover {
+     color: #F77F00;
+
+ }
+
+ .Carrinho {
+     position: relative;
+     background: #171717;
+     border: 1px solid #333;
+     border-radius: 18px;
+     padding: 10px;
+     font-size: 30px;
+     left: 60%;
+ }
+
+ .quantidade {
+     position: absolute;
+     top: -10px;
+     right: -8px;
+     background: #FF5700;
+     color: white;
+     border-radius: 50%;
+     padding: 5px 10px;
+     font-size: 14px;
+
+ }
+ 
