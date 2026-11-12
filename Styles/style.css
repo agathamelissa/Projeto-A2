@@ -1,0 +1,20 @@
+
+.promo{
+    background: linear-gradient(to right, #D83200, #FF9900);
+    color:  #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 8px;
+    display: flex;
+    
+  
+}
+.cupom{
+    border-radius: 5px;
+    padding: 4px;
+    background-color:  #a832008f;
+}
+.header{
+    
+}
