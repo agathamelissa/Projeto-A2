@@ -3,6 +3,7 @@
 
  .corpo {
      background-color: rgb(21, 21, 21);
+     margin: 0%;
 
  }
 
@@ -12,6 +13,7 @@
      text-align: center;
      padding: 10px;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 
  }
 
@@ -154,12 +156,13 @@
      margin-top: 0%;
      margin-left: 25px;
  }
+
  .left-column {
      display: grid;
      grid-template-columns: 1.1fr 0.9fr;
      align-items: center;
      gap: 3.5rem;
-     
+
  }
 
  .banner-img {
@@ -174,77 +177,77 @@
  }
 
 
-/* RESPONSIVIDADE PARA CELULARES */
-@media screen and (max-width: 600px) {
+ /* RESPONSIVIDADE PARA CELULARES */
+ @media screen and (max-width: 600px) {
 
-    /* Barra de navegação */
-    .nav-bar {
-        flex-wrap: wrap;
-        padding: 10px;
-    }
+     /* Barra de navegação */
+     .nav-bar {
+         flex-wrap: wrap;
+         padding: 10px;
+     }
 
-    .logo {
-        font-size: 35px;
-    }
+     .logo {
+         font-size: 35px;
+     }
 
-    .title {
-        font-size: 27px;
-    }
+     .title {
+         font-size: 27px;
+     }
 
-    .subtitle {
-        font-size: 12px;
-    }
+     .subtitle {
+         font-size: 12px;
+     }
 
-    nav {
-        position: static;
-        transform: none;
-        order: 4;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 15px;
-    }
+     nav {
+         position: static;
+         transform: none;
+         order: 4;
+         width: 100%;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 12px;
+         margin-top: 15px;
+     }
 
-    nav a {
-        font-size: 13px;
-    }
+     nav a {
+         font-size: 13px;
+     }
 
-    .Carrinho {
-        left: auto;
-        margin-left: auto;
-    }
+     .Carrinho {
+         left: auto;
+         margin-left: auto;
+     }
 
-    /* Banner */
-    .left-column {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        text-align: center;
-    }
+     /* Banner */
+     .left-column {
+         grid-template-columns: 1fr;
+         gap: 15px;
+         text-align: center;
+     }
 
-    .text-direita {
-        font-size: 38px;
-        margin: 20px 10px;
-    }
+     .text-direita {
+         font-size: 38px;
+         margin: 20px 10px;
+     }
 
-    .text2 {
-        font-size: 15px;
-        line-height: 1.6;
-        margin: 15px;
-    }
+     .text2 {
+         font-size: 15px;
+         line-height: 1.6;
+         margin: 15px;
+     }
 
-    .banner-button {
-        display: table;
-        margin: 20px auto;
-        font-size: 15px;
-        padding: 12px 22px;
-    }
+     .banner-button {
+         display: table;
+         margin: 20px auto;
+         font-size: 15px;
+         padding: 12px 22px;
+     }
 
-    .banner-img {
-        width: 90%;
-        max-width: 400px;
-        height: auto;
-        margin: auto;
-    }
+     .banner-img {
+         width: 90%;
+         max-width: 400px;
+         height: auto;
+         margin: auto;
+     }
 
-}
+ }
