@@ -436,6 +436,36 @@
 
  }
 
+ .economize {
+     color: #D83200;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     font-size: 20px;
+     align-items: center;
+     justify-self: center;
+     justify-content: center;
+     text-align: center;
+     margin: 0;
+     margin-top: 7rem;
+     gap: 10px;
+ }
+
+ .com{
+     text-align: center;
+     margin: 0;
+     color: #FFFFFF;
+     font-size: 50px;
+
+}
+
+ .matadores {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 50px;
+     background: linear-gradient(to right, #D83200, #FF9900);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+ }
+
 
 
 
