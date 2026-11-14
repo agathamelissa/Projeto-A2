@@ -173,8 +173,281 @@
      display: block;
      margin: auto;
 
+ }
+
+ .nosso-cardapio {
+     color: #D83200;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     font-size: 20px;
+     align-items: center;
+     justify-self: center;
+     justify-content: center;
+     text-align: center;
+     margin: 0;
+     margin-top: 7rem;
+     gap: 10px;
+ }
+
+ .obra {
+     text-align: center;
+     margin: 0;
+     color: #FFFFFF;
+     font-size: 50px;
 
  }
+
+ .obra-prima {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 50px;
+     background: linear-gradient(to right, #D83200, #FF9900);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+ }
+
+ .descricao {
+     text-align: center;
+     margin-top: 1rem;
+     margin: 0;
+     color: rgb(159, 156, 156);
+     font-size: 20px;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+
+ }
+
+ .categorias {
+     display: flex;
+     justify-content: flex-start;
+     gap: 10px;
+     padding-left: 5%;
+ }
+
+ .categorias button {
+
+     margin-top: 2rem;
+     background-color: #19191d;
+     color: #a5a5b5;
+     border: 1px solid #303036;
+     border-radius: 40px;
+     padding: 10px 20px;
+     font-size: 15px;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     cursor: pointer;
+     transition: 0.3s;
+     gap: 10px;
+
+ }
+
+ .categorias input {
+     position: absolute;
+     right: 20px;
+     margin-top: 2rem;
+     background-color: #19191d;
+     color: #a5a5b5;
+     border: 1px solid #303036;
+     border-radius: 40px;
+     padding: 8px 15px;
+     font-size: 15px;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     cursor: pointer;
+     transition: 0.3s;
+
+ }
+
+ /* Efeito ao passar o mouse nos botões */
+ .categorias button:hover {
+     background-color: #ff5100;
+     color: white;
+     border-color: #ff5100;
+     transform: translateY(-3px);
+ }
+
+ /* Efeito ao passar o mouse na barra de pesquisa */
+ .categorias input:hover {
+     border-color: #ff5100;
+ }
+
+ /* Efeito ao clicar na barra de pesquisa */
+ .categorias input:focus {
+     outline: none;
+     border-color: #ff5100;
+ }
+
+ .produtos {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 25px;
+     padding: 10px 5%;
+     justify-content: center;
+
+ }
+
+ .card-lanche {
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     color: #FFFFFF;
+     font-weight: bold;
+     background-color: #19191d;
+     border: 1px solid #303036;
+     border-radius: 15px;
+     padding: 30px;
+     color: white;
+     width: 300px;
+     box-sizing: border-box;
+ }
+
+ .card-lanche img {
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+
+
+ .smash-lanche {
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     color: #FFFFFF;
+     font-weight: bold;
+     background-color: #19191d;
+     border: 1px solid #303036;
+     border-radius: 15px;
+     padding: 30px;
+     color: white;
+     width: 300px;
+     box-sizing: border-box;
+
+ }
+
+ .smash-lanche img {
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+
+ }
+
+ .porcao {
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     color: #FFFFFF;
+     font-weight: bold;
+     background-color: #19191d;
+     border: 1px solid #303036;
+     border-radius: 15px;
+     padding: 30px;
+     color: white;
+     width: 300px;
+     box-sizing: border-box;
+ }
+
+ .porcao img {
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+
+ }
+
+ .bebidas-shakes {
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     color: #FFFFFF;
+     font-weight: bold;
+     background-color: #19191d;
+     border: 1px solid #303036;
+     border-radius: 15px;
+     padding: 30px;
+     color: white;
+     width: 300px;
+     box-sizing: border-box;
+ }
+
+
+ .bebidas-shakes img {
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+
+ }
+
+
+
+
+
+
+ .descricao {
+     color: rgb(159, 156, 156);
+     font-size: 16px;
+ }
+
+ .valor {
+     color: #FFFFFF;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     font-weight: bold;
+
+ }
+
+ .botao-comprar {
+     display: inline-block;
+     background-color: #d8320057;
+     color: white;
+     text-decoration: none;
+     border-radius: 10px;
+     border-color: #d83200dc;
+     padding: 5px 10px;
+     border-radius: 10px;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     font-size: 15px;
+     font-weight: bold;
+     transition: 0.3s;
+     margin-top: 0%;
+     margin-left: 10px;
+ }
+
+ .botao-comprar:hover {
+     background-color: #ff5100;
+     color: white;
+     border-color: #ff5100;
+     transform: translateY(-3px);
+
+ }
+
+ .card-lanche:hover {
+     border-color: #ff5100;
+     transform: translateY(-3px);
+ }
+
+ .smash-lanche:hover {
+     border-color: #ff5100;
+     transform: translateY(-3px);
+
+
+ }
+
+ .porcao:hover {
+     border-color: #ff5100;
+     transform: translateY(-3px);
+
+
+ }
+
+ .bebidas-shakes:hover {
+     border-color: #ff5100;
+     transform: translateY(-3px);
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  /* RESPONSIVIDADE PARA CELULARES */
@@ -248,6 +521,20 @@
          max-width: 400px;
          height: auto;
          margin: auto;
+     }
+
+     .categorias {
+         flex-wrap: wrap;
+         gap: 10px;
+     }
+
+     .categorias button {
+         padding: 5px 10px;
+         font-size: 14px;
+     }
+
+     .categorias input {
+         margin-top: 10rem;
      }
 
  }
