@@ -7,6 +7,7 @@
     <title>Brasa Burger</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="Styles/style.css">
+
 </head>
 
 <body class="corpo">
@@ -20,10 +21,41 @@
             <h2 class="title">Brasa Burger</h2>
             <h3 class="subtitle">Burger House</h3>
         </div>
-        <div class="Carrinho">
+        <div class="Carrinho" id="abrir-carrinho">
             <span class="icone carrinho">🛒</span>
             <span class="quantidade" id="contador">0</span>
         </div>
+        </div>
+
+        <!-- FUNDO ESCURO -->
+        <div class="fundo-carrinho" id="fundo-carrinho"></div>
+
+        <!-- ABA LATERAL DO CARRINHO -->
+        <div class="aba-carrinho" id="aba-carrinho">
+
+            <div class="topo-carrinho">
+                <h2>🛒 Meu Carrinho</h2>
+                <button id="fechar-carrinho">✕</button>
+            </div>
+
+            <div class="itens-carrinho" id="itens-carrinho">
+                <p class="carrinho-vazio">Seu carrinho está vazio!</p>
+            </div>
+
+            <div class="final-carrinho">
+                <h3>
+                    Total:
+                    <span id="total-carrinho">R$ 0,00</span>
+                </h3>
+
+                <button class="finalizar-pedido">
+                    Finalizar Pedido
+                </button>
+            </div>
+
+        </div>
+
+
         <nav>
             <a href="index.html">Ínicio</a>
             <a href="#cardapio">Cardapio</a>
@@ -32,27 +64,23 @@
             <a href="#localizacao">Localização</a>
         </nav>
     </header>
-
-    <span id="cardapio"></span>
-    <span id="combos"></span>
-    <span id="avaliacoes"></span>
-    <span id="localizacao"></span>
-    <hr color=" #D83200">
-
     <section class="banner">
         <div class="left-column">
             <span>
                 <h1 class="text-direita">CARNE NA <span class="brasa">BRASA</span>,<br> QUEIJO DERRETIDO E <br>SABOR
-                    <span class="brutal">BRUTAL</span></h1>
-                <p class="text2">Prepare-se para sentir o verdadeiro sabor da brasa!<br> Carne suculenta, queijo derretendo e uma explosão de sabores a cada mordida.<br> Aqui, a fome vira desejo e cada hambúrguer é uma experiência brutal!</p>
+                    <span class="brutal">BRUTAL</span>
+                </h1>
+                <p class="text2">Prepare-se para sentir o verdadeiro sabor da brasa!<br> Carne suculenta, queijo
+                    derretendo e uma explosão de sabores a cada mordida.<br> Aqui, a fome vira desejo e cada hambúrguer
+                    é uma experiência brutal!</p>
 
                 <a class="banner-button" href="#cardapio">Ver Cardapio → </a>
             </span>
 
+
             <div class="right-column">
                 <img class="banner-img" src="assets/banner.png" alt="hamburger artesnal">
             </div>
-        </div>
     </section>
 
 
@@ -60,10 +88,266 @@
 
 
 
+    <section id="cardapio">
+        <div class="menu">
+            <h2 class="nosso-cardapio">Nosso Cardápio</h2>
+            <h1 class="obra">ESCOLHA SUA <span class="obra-prima">OBRA-PRIMA</span></h1>
+            <p class="descricao">Todos os nossos burgers acompanham maionese verde defumada da casa.</p>
+
+            <div class="categorias">
+                <button class="ativo">Todos</button>
+                <button class="lanches">🔥Na Brasa</button>
+                <button class="smash">⚡Smash Burger</button>
+                <button class="porcao">🍟 Porções & Fritas</button>
+                <button class="drink">🥤 Bebidas & Shakes</button>
+                <input type="text" id="busca" placeholder="⌕ Buscar">
+
+            </div>
+
+            <div class="produtos">
+                <div class="card-lanche">
+                    <img src="assets/cardapio.imagens/Brasa burger bacon.png" alt="burger">
+                    <h3>Brasa Bacon Melt</h3>
+                    <p class="descricao">Pão brioche selado na manteiga, burger Angus 180g na brasa, duplo cheddar
+                        inglês derretido,
+                        fatias grossas de bacon defumado e molho secreto defumado.</p>
+                    <span class="valor">R$ 49.90</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="card-lanche">
+                    <img src="assets/cardapio.imagens/Double costela.png" alt="burger-costela">
+                    <h3>Double Costela</h3>
+                    <p class="descricao">Dois burgers de 180g de costela bovina na parrilla, queijo prato derretido,
+                        cebola caramelizada no whiskey Bourbon, picles artesanal e maionese de alho negro.</p>
+                    <span class="valor">R$60.00</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="card-lanche">
+                    <img src="assets/cardapio.imagens/Gorgonzola e mel picante.png" alt="gorgonzola">
+                    <h3>Gorgonzola com Mel Picante</h3>
+                    <p class="descricao">Burger Angus 180g, creme intenso de gorgonzola dolce, crispy de alho-poró
+                        crocante, rúcula fresca e fio de mel silvestre levemente apimentado.</p>
+                    <span class="valor">R$48.90</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="smash-lanche ">
+                    <img src="assets/cardapio.imagens/Smash duplo.png" alt="Smash">
+                    <h3>Smash Duplo</h3>
+                    <p class="descricao">Dois discos de 90g prensados na chapa fervendo com finas lâminas de cebola
+                        branca, american cheese cremoso, picles e mostarda Dijon.</p>
+                    <span class="valor">R$32.50</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="smash-lanche ">
+                    <img src="assets/cardapio.imagens/Smash Trufado.png" alt="Smash">
+                    <h3>Smash Trufado</h3>
+                    <p class="descricao">Dois smash burgers 90g com crosta crocante, queijo suíço gruyère, cogumelos
+                        Paris salteados na manteiga e maionese artesanal de azeite trufado.</p>
+                    <span class="valor">R$39.50</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="smash-lanche ">
+                    <img src="assets/cardapio.imagens/Smash kids.png" alt="Smash">
+                    <h3>Smash Kids</h3>
+                    <p class="descricao">Um smash burger de 90g com crosta crocante e suculenta, abraçado por uma
+                        generosa fatia de cheddar inglês derretido, alface americana fresca e rodelas de tomate.</p>
+                    <span class="valor">R$29.90</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="porcao">
+                    <img src="assets/cardapio.imagens/Batata Rustica.png" alt="Batata Brasa">
+                    <h3>Batata Brasa</h3>
+                    <p class="descricao">Porção generosa de batatas cortadas à mão com casca, cobertas com piscina de
+                        cheddar inglês e bacon.</p>
+                    <span class="valor">R$26.90</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="porcao">
+                    <img src="assets/cardapio.imagens/Anéis de cebola crocantes.png" alt="onion Brasa">
+                    <h3>Onion Rings Brasa</h3>
+                    <p class="descricao">Anéis de cebola doce gigantes empanados em massa leve de cerveja IPA artesanal,
+                        acompanhados de barbecue defumado da casa.</p>
+                    <span class="valor">R$20.90</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="porcao">
+                    <img src="assets/cardapio.imagens/balde de frango.png" alt="onion Brasa">
+                    <h3>Porção Frango Brasa</h3>
+                    <p class="descricao">Porção generosa de pedaços de frango empanados, dourados e supercrocantes por
+                        fora, com interior macio e suculento.</p>
+                    <span class="valor">R$58.90</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="bebidas-shakes">
+                    <img src="assets/cardapio.imagens/coca.png" alt="bebidaBrasa">
+                    <h3>Coca Cola</h3>
+                    <p class="descricao">CocaCola 700ml</p>
+                    <span class="valor">R$7.00</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+
+                <div class="bebidas-shakes">
+                    <img src="assets/cardapio.imagens/fanta.png" alt="bebidaBrasa">
+                    <h3>Fanta laranja</h3>
+                    <p class="descricao">Fanta 350ml</p>
+                    <span class="valor">R$7.00</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+
+                <div class="bebidas-shakes">
+                    <img src="assets/cardapio.imagens/Milk shake.png" alt="bebidaBrasa">
+                    <h3>Milk Shake</h3>
+                    <p class="descricao">Milk Shake OvoMaltine 700ml</p>
+                    <span class="valor">R$15.00</span>
+                    <hr color="#303036">
+                    <button class="botao-comprar">+Adicionar</button>
+                </div>
+            </div>
+
+            <section id="combos">
+                <div class="combo">
+                    <h2 class="economize">Economize no Pedido</h2>
+                    <h1 class="com">COMBOS <span class="matadores">MATADORES</span></h1>
+
+                    <div class="sessao-combo">
+                        <div class="combos-matadores">
+                            <img src="assets/cardapio.imagens/Hambúrguer Duplo com Fritas e Fanta.png" alt="Smash">
+
+                            <h3>Combo Duplo Brasa</h3>
+
+                            <p class="descricao">
+                                Combo Brasa Duplo: Pão australiano, dois hambúrgueres artesanais
+                                suculentos, cheddar cremoso, bacon crocante, alface fresca,
+                                tomate, picles e cebola roxa. Acompanha uma porção de batatas
+                                fritas crocantes e uma Fanta Laranja geladinha.
+                                O combo perfeito para matar a sua fome!
+                            </p>
+                            <span class="valor">R$89.50</span>
+                            <hr color="#303036">
+                            <button class="botao-comprar">+Adicionar</button>
+                        </div>
 
 
 
+                    </div>
+                </div>
+                <section id="avaliacoes">
+                    <div class="feedback">
+                        <h2 class="quem-prova">Quem prova, vicia</h2>
+                        <h1 class="dizem">
+                            O QUE DIZEM OS
+                            <span class="burger">APAIXONADOS POR BURGER</span>
+                        </h1>
+                    </div>
 
+                    <div class="sessao-avaliacao">
+
+                        <!-- PRIMEIRA AVALIAÇÃO -->
+                        <div class="avaliacoes">
+                            <h3 class="star">★★★★★</h3>
+
+                            <p class="comentario">
+                                "Sem exagero, o Brasa Bacon Melt é o melhor hambúrguer
+                                que já comi na vida. O gostinho de defumado da carne
+                                na brasa faz toda a diferença e a maionese verde é viciante!"
+
+                                <br>
+                                <span class="identidade">Jesse Camargo</span>
+                            </p>
+                        </div>
+
+                        <!-- SEGUNDA AVALIAÇÃO -->
+                        <div class="avaliacoes">
+                            <h3 class="star">★★★★★</h3>
+
+                            <p class="comentario">
+                                "Pedi no delivery achando que ia chegar murcho e me
+                                surpreendi! A batata chegou estalando de crocante
+                                e o burger no ponto rosado perfeito que escolhi."
+
+                                <br>
+                                <span class="identidade">Maria Figaro</span>
+                            </p>
+                        </div>
+
+                        <!-- TERCEIRA AVALIAÇÃO -->
+                        <div class="avaliacoes">
+                            <h3 class="star">★★★★★</h3>
+
+                            <p class="comentario">
+                                "O Smash Trufado e o Milkshake de Ovomaltine são de
+                                outro mundo. Ambiente irado, atendimento rápido e
+                                preço super justo pela qualidade absurda dos ingredientes."
+
+                                <br>
+                                <span class="identidade">José Silva</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </section>
+
+
+
+    <footer id="localizacao">
+
+        <div class="footer-conteudo">
+
+            <!-- LOCALIZAÇÃO -->
+            <div class="footer-info">
+                <h3>Localização</h3>
+                <p>Rua paralelepipedo, 123</p>
+                <p>São Paulo - SP</p>
+            </div>
+
+            <!-- TELEFONE -->
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>(11) 99999-9999</p>
+                <p>Faça seu pedido!</p>
+            </div>
+
+            <!-- HORÁRIOS -->
+            <div class="footer-info">
+                <h3> Horário de Funcionamento</h3>
+                <p>Terça a Quinta: 18h00 às 23h30</p>
+                <p>Sexta e Sábado: 18h00 às 01h30</p>
+                <p>Domingo: 17h30 às 23h00</p>
+                <p>Segunda-feira: Fechado</p>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            <p>© 2026 Brasa Burger - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
+<script src="scripts/script.js"></script>
 
 </html>
